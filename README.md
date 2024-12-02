@@ -26,12 +26,22 @@ Este proyecto tiene como objetivo demostrar el uso de la **programación paralel
   - `opencv-python`: Para el procesamiento de imágenes.
   - `multiprocessing`: Para la implementación de paralelismo.
   - `numpy`: Para operaciones matemáticas y de matrices.
+  - `Cuda Nvidia`: En caso de tener una gráfica compatible con est tecnología.
+  - `cupy-cuda 12x`: CuPy es una biblioteca de array de código abierto acelerada con NVIDIA CUDA.
 
 ## Requisitos del Sistema
 1. Tener instalado Python 3.8 o superior.
 2. Instalar las dependencias necesarias:
    ```bash
    pip install opencv-python numpy
+
+En caso de tener una gráfica compatible: 
+- Instalar [CUDA Toolkit](https://developer.nvidia.com/cuda-downloads)
+- Instalar dependencias para el uso de CUDA en Python
+  ```bash
+  pip install cupy-cuda12x
+- Actualizar drivers Nvidia
+- Usar el archivo `paralelimo_cuda.py`
 
 ## Ejecución del Proyecto
 1. Clonar el repositorio:
@@ -59,7 +69,7 @@ Output:
 <img src="Output/edges_20240916_132946.jpg" alt="Imagen con bordes" width="400"/>
 <img src="Output/gray_20240916_132946.jpg" alt="Imagen con escala de grises" width="400"/> </div>
 
-## Resultados de Rendimiento
+## Resultados de Rendimiento con CPU (AMD Ryzen 5 5500U)
 
 | Número de Procesos | Tiempo Secuencial (s) | Tiempo Paralelo (s) | Speedup |
 |---------------------|-----------------------|----------------------|---------|
@@ -71,6 +81,17 @@ Output:
 
 **Nota:** Se usaron 40 imagenes para estas pruebas, con una resolución de entre 2000x8000.
 
+## Resultados de Rendimiento con GPU (NVIDIA GFORCE RTX 4050)
+
+| Número de imagenes | Tiempo Secuencial (s) | Tiempo Paralelo (s) | Speedup |
+|---------------------|-----------------------|----------------------|---------|
+| 1                   | 15.31                | 5.05                | 3.03    |
+| 30                  | 19.96                | 6.87                | 2.90    |
+| 50                  | 19.89                | 5.92                | 3.36    |
+
+**Nota**: Para las pruebas pequeñas se usaron imagenes mas pesadas, y para las pruebas mas grandes se usaron imagenes normales(2000x8000).  
+
 Paricipantes: 
 - [Bryan Emmanuel Cetzal Ceme](https://github.com/BryanCetzal/)
-- [Emir Alejandro Bellos Cruz](https://github.com/EmirBellos)
+- [Bennen Alexandre Tun Ek](https://github.com/Benn7n/)
+- [Bennen Alexandre Tun Ek](https://github.com/EmirBellos/)
