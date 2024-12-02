@@ -32,3 +32,25 @@ Este proyecto tiene como objetivo demostrar el uso de la **programación paralel
 2. Instalar las dependencias necesarias:
    ```bash
    pip install opencv-python numpy
+
+## Ejecución del Proyecto
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/BryanCetzal/EfectosImagenes.git
+   cd EfectosImagenes
+2. Agregar imagenes a la carpeta de images
+3. Ejecutar el script
+   ```bash
+   python paralelismo.py
+
+## Resultados Esperados
+- Imagenes procesadas:
+  -Las imagenes procesadas se guardaran en la carpeta `output`
+- Medición del rendimiento:
+  - El script imprimirá tiempos de ejecución secuenciales y paralelos.
+  - Se calculará y mostrará el speedup y la eficiencia.
+ 
+## Ejemplo de uso
+Input: 
+
+Output:
