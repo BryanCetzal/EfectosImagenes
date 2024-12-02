@@ -52,8 +52,23 @@ Este proyecto tiene como objetivo demostrar el uso de la **programación paralel
  
 ## Ejemplo de uso
 Input: 
-![](images/20240916_132946.jpg)
-Output:
-![](Output/blurred_20240916_132946.jpg)
-![](Output/edges_20240916_132946.jpg)
-![](Output/gray_20240916_132946.jpg)
+![](images/20240916_132946.jpg)  
+
+Output:  
+<div align="center"><img src="Output/blurred_20240916_132946.jpg" alt="Imagen con blurred" width="400"/>
+<img src="Output/edges_20240916_132946.jpg" alt="Imagen con bordes" width="400"/>
+<img src="Output/gray_20240916_132946.jpg" alt="Imagen con escala de grises" width="400"/> </div>
+
+## Resultados de Rendimiento
+
+| Número de Procesos | Tiempo Secuencial (s) | Tiempo Paralelo (s) | Speedup |
+|---------------------|-----------------------|----------------------|---------|
+| 1                   | 15.24                | 15.24               | 1.00    |
+| 2                   | 15.24                | 8.12                | 1.88    |
+| 4                   | 15.24                | 4.06                | 3.75    |
+| 8                   | 15.24                | 2.03                | 7.51    |
+
+**Nota:** Se usaron 40 imagenes para estas pruebas.
+
+Paricipantes: 
+- [Bryan Emmanuel Cetzal Ceme](https://github.com/BryanCetzal/)
