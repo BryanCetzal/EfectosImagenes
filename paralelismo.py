@@ -23,12 +23,12 @@ def apply_filters(image_path):
         # Escalado a niveles de gris
         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
         
-        # Suavizado con filtro Gaussiano
-        blurred = cv2.GaussianBlur(gray, (5, 5), 0)
+        # Suavizado con filtro Gaussiano (a la imagen en color)
+        blurred = cv2.GaussianBlur(image, (25, 25), 0)
         
         # Detección de bordes con Sobel
-        sobelx = cv2.Sobel(blurred, cv2.CV_64F, 1, 0, ksize=3)
-        sobely = cv2.Sobel(blurred, cv2.CV_64F, 0, 1, ksize=3)
+        sobelx = cv2.Sobel(gray, cv2.CV_64F, 1, 0, ksize=3)
+        sobely = cv2.Sobel(gray, cv2.CV_64F, 0, 1, ksize=3)
         edges = cv2.magnitude(sobelx, sobely)
 
         # Normalizar bordes para visualización
@@ -43,6 +43,7 @@ def apply_filters(image_path):
 
     except Exception as e:
         print(f"Error procesando {image_path}: {e}")
+
 
 # Función principal
 def main():
