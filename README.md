@@ -71,13 +71,13 @@ Output:
 
 ## Resultados de Rendimiento con CPU (AMD Ryzen 5 5500U)
 
-| Número de Procesos | Tiempo Secuencial (s) | Tiempo Paralelo (s) | Speedup |
-|---------------------|-----------------------|----------------------|---------|
-| 1                   | 30.59                | 30.78               | 0.99    |
-| 2                   | 30.74                | 18.20               | 1.69    |
-| 4                   | 31.22                | 11.35               | 2.75    |
-| 6                   | 30.57                | 10.59               | 2.89    |
-| 8                   | 30.62                | 9.81                | 3.12    |
+| Número de Procesos | Tiempo Paralelo (s) | Speedup |
+|---------------------|----------------------|---------|
+| 1                   | 30.78               | 0.99    |
+| 2                   | 18.20               | 1.69    |
+| 4                   | 11.35               | 2.75    |
+| 6                   | 10.59               | 2.89    |
+| 8                   | 9.81                | 3.12    |
 
 **Nota:** Se usaron 40 imagenes para estas pruebas, con una resolución de entre 2000x8000.
 
@@ -85,9 +85,7 @@ Output:
 
 | Número de imagenes | Tiempo Secuencial (s) | Tiempo Paralelo (s) | Speedup |
 |---------------------|-----------------------|----------------------|---------|
-| 1                   | 15.31                | 5.05                | 3.03    |
-| 30                  | 19.96                | 6.87                | 2.90    |
-| 50                  | 19.89                | 5.92                | 3.36    |
+| 40                  | 10.26                | 5.90                | 1.73|
 
 **Nota**: Para las pruebas pequeñas se usaron imagenes mas pesadas, y para las pruebas mas grandes se usaron imagenes normales(2000x8000).  
 
