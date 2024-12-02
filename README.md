@@ -74,3 +74,4 @@ Output:
 Paricipantes: 
 - [Bryan Emmanuel Cetzal Ceme](https://github.com/BryanCetzal/)
 - [Emir Alejandro Bellos Cruz](https://github.com/EmirBellos)
+- [Luis Javier Quintana Olivera] (https://github.com/Luis-J-Quintana)
