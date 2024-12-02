@@ -63,12 +63,13 @@ Output:
 
 | Número de Procesos | Tiempo Secuencial (s) | Tiempo Paralelo (s) | Speedup |
 |---------------------|-----------------------|----------------------|---------|
-| 1                   | 15.24                | 15.24               | 1.00    |
-| 2                   | 15.24                | 8.12                | 1.88    |
-| 4                   | 15.24                | 4.06                | 3.75    |
-| 8                   | 15.24                | 2.03                | 7.51    |
+| 1                   | 30.59                | 30.78               | 0.99    |
+| 2                   | 30.74                | 18.20               | 1.69    |
+| 4                   | 31.22                | 11.35               | 2.75    |
+| 6                   | 30.57                | 10.59               | 2.89    |
+| 8                   | 30.62                | 9.81                | 3.12    |
 
-**Nota:** Se usaron 40 imagenes para estas pruebas.
+**Nota:** Se usaron 40 imagenes para estas pruebas, con una resolución de entre 2000x8000.
 
 Paricipantes: 
 - [Bryan Emmanuel Cetzal Ceme](https://github.com/BryanCetzal/)
