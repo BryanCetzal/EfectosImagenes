@@ -83,11 +83,11 @@ Output:
 
 ## Resultados de Rendimiento con GPU (NVIDIA GFORCE RTX 4050)
 
-| Número de imagenes | Tiempo Secuencial (s) | Tiempo Paralelo (s) | Speedup |
-|---------------------|-----------------------|----------------------|---------|
-| 40                  | 10.26                | 5.90                | 1.73|
+| Número de imagenes | Tiempo Secuencial (s) | Tiempo Paralelo (s) |
+|---------------------|-----------------------|----------------------|
+| 40                  | 10.26                | 5.90                |
 
-**Nota**: Para las pruebas pequeñas se usaron imagenes mas pesadas, y para las pruebas mas grandes se usaron imagenes normales(2000x8000).  
+**Nota**: Se usaron las mismas 40 imágenes que la anterior prueba.
 
 Paricipantes: 
 - [Bryan Emmanuel Cetzal Ceme](https://github.com/BryanCetzal/)
