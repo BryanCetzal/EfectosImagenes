@@ -52,5 +52,8 @@ Este proyecto tiene como objetivo demostrar el uso de la **programación paralel
  
 ## Ejemplo de uso
 Input: 
-
+![](images/20240916_132946.jpg)
 Output:
+![](images/blurred_20240916_132946.jpg)
+![](images/edges_20240916_132946.jpg)
+![](images/gray_20240916_132946.jpg)
